@@ -1,7 +1,10 @@
 @media (max-width: 768px) {
 .display_hidden {
-display:none;
+display:none !important;
 }
+.blog-title-area h3 {
+    font-size: 19px;
+    line-height: 25px;}
 .navbar-brand {
  padding: 10px 0px;
 }
@@ -20,17 +23,18 @@ padding-top:46px;
 .top_header {
  margin-bottom: 0;
  background: #fdfcfc;
+ padding:0px;
 }
 .left_menucate li a {
-font-size:12px;
+font-size:13px;
 border-radius: 0px;
-padding: 3px 4px;
+padding: 3px 6px;
 }
 .left_menucate li img {
  display: block;
  width: 22px;
  height: 22px;
- margin: 0px;
+ margin: 0px 3px;
 }
 h2 {
  font-size: 14px;
@@ -83,9 +87,7 @@ padding:0px;
  .header {
 display:none;
 }
-.new_top {
-display:none;
-}
+
 .news-footer {
 font-size:12.5px;
 }
