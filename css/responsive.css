@@ -5,11 +5,9 @@ display:none !important;
 .blog-title-area h3 {
     font-size: 19px;
     line-height: 25px;}
-.navbar-brand {
- padding: 10px 0px;
-}
+
 .navbar-brand img {
-width:130px;
+width:110px;
 }
 .hea_new {
  background: #fff;
@@ -20,10 +18,10 @@ z-index:9;
 .section {
 padding-top:46px;
 }
+.new_top ul li{ padding:0px 7px;}
 .top_header {
  margin-bottom: 0;
- background: #fdfcfc;
- padding:0px;
+ padding:8px 0px;
 }
 .left_menucate li a {
 font-size:13px;
@@ -60,7 +58,7 @@ border:none;
 .left_side_flex {
 width:100%;
 background: #f7f7f7;
-position: fixed;
+position: fixed !important;
  z-index: 9;
  box-shadow: 0px 1px 2px #d6d6d6;
 padding:0px;
@@ -95,16 +93,17 @@ font-size:12.5px;
 margin-right:7px;
 }
 .soxi_right li {
- font-size: 13px;
- background: #f9f5f5c7;
- color: #000;
- width: 22px;
- height: 22px;
- border-radius: 50px;
- margin-right: 0px !important;
- line-height: 22px;
- border: 1px dashed #9e6868;
+ font-size: 13px !important;
+    background: #f9f5f5c7 !important;
+    color: #000;
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 50px;
+    margin-right: 0px !important;
+    line-height: 22px !important;
+    border: 1px dashed #9e6868 !important;
 }
+.soxi_right li i{ font-size:13px !important;}
  .post-media img {
  width: 100%;
  height: 107px;
@@ -150,4 +149,10 @@ margin-right:7px;
 }
 .footwer_bottom{font-size: 13px !important;
     line-height: 17px !important;}
+.fixedsticky {
+    top: 44px;
+}
+	
+.demo-gallery > ul > li{ width:100%; display:block; margin:0px 0px 12px 0px;}
+.demo-gallery{ padding:12px;}
 }
