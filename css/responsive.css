@@ -2,6 +2,9 @@
 .display_hidden {
 display:none !important;
 }
+.story_card_main{ padding:15px;}
+.stories-card{    max-width: 100%;
+    min-width: 100%; margin-left:0px; margin-right:0px;}
 .blog-title-area h3 {
     font-size: 19px;
     line-height: 25px;}
