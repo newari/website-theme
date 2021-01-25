@@ -102,10 +102,10 @@ h1, h2, h3, h4, h5 {
 	display: table;
 	color: #ffffff !important;
 	position: relative;
-	width: 35px;
-	text-align:center; line-height:35px;
+	width: 30px;
+	text-align:center; line-height:30px;
     border-radius: 50%;
-    height: 35px;
+    height: 30px;
 
 }
 .social-button .fa {
@@ -126,8 +126,8 @@ h1, h2, h3, h4, h5 {
 .google-button {
 	background-color: #ea4335;
 }
-.youtube-button {
-	background-color: #cd201f;
+.whatsapp-button {
+	background-color:#339933;
 }
 .blog-meta .bg-orange {
 	color: #ffffff !important;

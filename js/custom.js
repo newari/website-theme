@@ -1,29 +1,7 @@
 
 (function($) {
     "use strict";
-    $(document).ready(function() {
-        $('#nav-expander').on('click', function(e) {
-            e.preventDefault();
-            $('body').toggleClass('nav-expanded');
-        });
-        $('#nav-close').on('click', function(e) {
-            e.preventDefault();
-            $('body').removeClass('nav-expanded');
-        });
-    });
-
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-
-    $('.carousel').carousel({
-        interval: 4000
-    })
-
-    $(window).load(function() {
-        $("#preloader").on(500).fadeOut();
-        $(".preloader").on(600).fadeOut("slow");
-    });
+<!--scroll top-->
 
     jQuery(window).scroll(function(){
         if (jQuery(this).scrollTop() > 1) {
@@ -37,71 +15,61 @@
         return false;
     });
 
+<!--video gallery-->
+$('#video-gallery').lightGallery();
 
  // Tranding carousel
-   
-
-
-    // Carousel item 1
-    $(".carousel-item-1").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1500,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ]
-    });
-
-    // Carousel item 2
-    $(".carousel-item-2").owlCarousel({
-        autoplay: false,
-        smartSpeed: 7000,
-        margin: 20,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
+$('.owl-carousel').owlCarousel({
+    stagePadding: 200,
+    loop:true,
+    margin:10,
+    items:1,
+    lazyLoad: true,
+    nav:true,
+	 navText : [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ],
-        responsive: {
-            0:{
-                items:3
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            }
+  responsive:{
+        0:{
+            items:1,
+            stagePadding: 60
+        },
+        600:{
+            items:1,
+            stagePadding: 100
+        },
+        1000:{
+            items:1,
+            stagePadding: 200
+        },
+        1200:{
+            items:1,
+            stagePadding: 250
+        },
+        1400:{
+            items:1,
+            stagePadding: 300
+        },
+        1600:{
+            items:1,
+            stagePadding: 350
+        },
+        1800:{
+            items:1,
+            stagePadding: 400
         }
-    });
+    }
+})
+
+
+
+<!--sticky left right-->
+$( '.right_side_flex' ).fixedsticky();
+$( '.left_side_flex' ).fixedsticky();
+
+
 
 
 })(jQuery);
 
-
-function openCategory(evt, catName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(catName).style.display = "block";
-    evt.currentTarget.className += " active";
-} 

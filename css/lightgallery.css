@@ -187,17 +187,20 @@
   content: "\e0f2";
 }
 
+.lg-download{ display:none;}
+#lg-zoom-in, #lg-zoom-out, #lg-actual-size{ display:none;}
 .lg-sub-html {
   background-color: rgba(0, 0, 0, 0.45);
   bottom: 0;
   color: #EEE;
   font-size: 16px;
   left: 0;
-  padding: 10px 40px;
+  padding: 0px 40px;
   position: fixed;
   right: 0;
-  text-align: left;
+  text-align:center;
   z-index: 1080;
+  bottom:20px !important;
 }
 .lg-sub-html h4 {
   margin: 0;
@@ -298,6 +301,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer.lg-thumb-open .lg-thumb-outer {
   -webkit-transform: translate3d(0, 0%, 0);
   transform: translate3d(0, 0%, 0);
+  display:none;
   
 }
 .lg-outer .lg-thumb {
