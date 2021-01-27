@@ -6,8 +6,10 @@ display:none !important;
 .stories-card{    max-width: 100%;
     min-width: 100%; margin-left:0px; margin-right:0px;}
 .blog-title-area h3 {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 25px;}
+	
+h3{ font-size:16px;}
 
 .navbar-brand img {
 width:110px;
@@ -18,8 +20,9 @@ width:110px;
 z-index:9;
  width: 100%;
 }
+.sahud{ display:none !important;}
 .section {
-padding-top:46px;
+padding-top:0px;
 }
 .new_top ul li{ padding:0px 7px;}
 .top_header {
@@ -156,6 +159,6 @@ margin-right:7px;
     top: 44px;
 }
 	
-.demo-gallery > ul > li{ width:100%; display:block; margin:0px 0px 12px 0px;}
+.demo-gallery > ul > li{ width:100%; max-width: 100%; min-width: 100%; display:block; margin:0px 0px 12px 0px;}
 .demo-gallery{ padding:12px;}
 }
