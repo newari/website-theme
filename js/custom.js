@@ -21,6 +21,9 @@
 $( '.right_side_flex' ).fixedsticky();
 $( '.left_side_flex' ).fixedsticky();
 
+$( ".close_btn" ).click(function() {
+    $('.close_popup').hide();
+});
 
 
 
