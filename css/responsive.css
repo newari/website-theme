@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+body{ padding-top:73px;}
 .display_hidden {
 display:none !important;
 }
@@ -20,6 +21,19 @@ width:110px;
 z-index:9;
  width: 100%;
 }
+.close_popup{ display:none;}
+.LeftCont{ width:100%;}
+.login-container{ width:100%; padding:15px; margin-bottom:20px;}
+.category_top{ margin-top:13px; overflow-x:auto; padding:7px 10px;}
+.stories-now{justify-content: left;}
+.story-now-item {
+    margin-right: 15px;
+    align-self: center;
+    max-width: 65px;
+}
+.story-now-circle{width: 3rem;
+    height: 3rem; padding:3px;}
+
 .sahud{ display:none !important;}
 .section {
 padding-top:0px;
@@ -58,7 +72,7 @@ display:block;
 .middle_box_flex {
 width:100%;
 display:block;
-padding-top:37px;
+padding-top:0;
 border:none;
 }
 .left_side_flex {
